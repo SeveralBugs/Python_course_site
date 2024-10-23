@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head> <!-- Данные, которые не отображаются на самой странице -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Обучение Python</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body> <!-- Видимое содержимое страницы -->
+    <header class="oblozhka"> <!-- Шапка сайта -->
+        <h1>Курс по Python</h1>
+        <nav class="container">
+            <ul>
+                <li>Ввод-вывод данных</a></li>
+                <li>Работа с целыми числами</a></li>
+                <li>Условный оператор</a></li>
+                <li>Циклы for и while</a></li>
+                <li>Строковый тип данных</a></li>
+                <li>Списки</a></li>
+                <li>Функции</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main> <!-- Основное содержание страницы -->
+
+        <section id="int"> <!-- Секция для работы с целыми числами -->
+            <h2>Работа с целыми числами</h2>
+            <ol>
+                <li>Операция возведения в степень (**)</li>
+                <li>Операция нахождения остатка (%)</li>
+                <li>Операция целочисленного деления (//)</li>
+                <li>Таблица приоритетов</li>
+            </ol>
+        </section>
+        <div class="grid">
+            <div class="article"> <!-- Секция для операции возведения в степень -->
+                <div>
+                    <h3>Операция возведения в степень</h3>
+                    <p>Для возведения числа в степень используется оператор **. Пример вывода кода:</p>
+                    <code>print(2 ** 0)  # Ответ: 1</code>
+                    <code>print(2 ** 1)  # Ответ: 2</code>
+                    <code>print(2 ** 2)  # Ответ: 4</code>
+                    <code>print(2 ** 3)  # Ответ: 8</code>
+                </div>
+            </div>
+
+            <div class="article"> <!-- Секция для операции нахождения остатка -->
+                <div>
+                    <h3>Операция нахождения остатка (%)</h3>
+                    <p>Оператор деления с остатком (%) возвращает остаток от деления двух целых чисел. Пример:</p>
+                    <code>print(10 % 3)  # Ответ: 1</code>
+                    <code>print(10 % 4)  # Ответ: 2</code>
+                    <code>print(10 % 5)  # Ответ: 0</code>
+                    <code>print(10 % 6)  # Ответ: 4</code>
+                </div>
+            </div>
+
+            <div class="article"> <!-- Секция для операции целочисленного деления -->
+                <div>
+                    <h3>Операция целочисленного деления (//)</h3>
+                    <p>Оператор целочисленного деления (//) отбрасывает десятичную часть результата. Пример:</p>
+                    <code>print(10 // 3)  # Ответ: 3</code>
+                    <code>print(10 // 4)  # Ответ: 2</code>
+                    <code>print(10 // 5)  # Ответ: 2</code>
+                    <code>print(10 // 6)  # Ответ: 1</code>
+                </div>
+            </div>
+        </div>
+        <section id="priority-table"> <!-- Секция для таблицы приоритетов -->
+            <h3>Таблица приоритетов</h3>
+            <table>
+                <tr>
+                    <th>Оператор</th>
+                    <th>Описание</th>
+                </tr>
+                <tr>
+                    <td>()</td>
+                    <td>Скобки</td>
+                </tr>
+                <tr>
+                    <td>**</td>
+                    <td>Возведение в степень</td>
+                </tr>
+                <tr>
+                    <td>- (унарный минус)</td>
+                    <td>Унарный минус</td>
+                </tr>
+                <tr>
+                    <td>*, /, //, %</td>
+                    <td>Умножение, деление, целочисленное деление, остаток от деления</td>
+                </tr>
+                <tr>
+                    <td>+, -</td>
+                    <td>Сложение, вычитание</td>
+                </tr>
+            </table>
+            <p>Больше информации можно найти в <a href="https://docs.python.org/3/">документации</a>.</p>
+        </section>
+        <div id="razdel-commentariev">
+            <h3>Раздел комментариев</h3>
+            <input type="text" id="user-name" placeholder="Ваше имя">
+            <br>
+            <textarea id="user-input" placeholder="Введите текст"></textarea>
+            <br><br>
+            <button id="add-button">Опубликовать</button>
+            <button id="sort-button">Отсортировать</button>
+            <div id="content-area"></div>
+            <script src="script.js"></script>
+        </div>
+
+    </main>
+
+
+    <footer class="oblozhka"> <!-- Подвал сайта -->
+        <img src="Python-logo-1024x576.png" alt="Логотип Python" width="512" height="288">
+        <p>Пак Андрей ИС-22-5<br>Авторские права &copy; 2024</p>
+    </footer>
+
+</body>
+
+</html>
